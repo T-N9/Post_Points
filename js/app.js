@@ -58,6 +58,7 @@ function t_valueMaintain(){
 }
 
 function al_valueMaintain(){
+    let has_fillForm=fillForm.classList.contains('d-block');
     let has_t_invalidForm=t_invalidForm.classList.contains('d-block');
     let has_al_invalidForm=al_invalidForm.classList.contains('d-block');
     let has_exForm=examineForm.classList.contains('d-block');
@@ -68,13 +69,14 @@ function al_valueMaintain(){
 
     let value_al_Answer=document.getElementById('a_lecturerAnswer');
     let value_al_Mark=document.getElementById('a_lecturerMark');
-    if(has_t_invalidForm || has_al_invalidForm || has_exForm){
+    if(has_fillForm || has_t_invalidForm || has_al_invalidForm || has_exForm){
         console.log("Deleting");
         value_t_Answer.innerHTML=value_t_Mark.innerHTML=value_al_Answer.innerHTML=value_al_Mark.innerHTML=All_total_Mark.innerHTML="";
     }
 }
 
 function l_valueMaintain(){
+    let has_fillForm=fillForm.classList.contains('d-block');
     let has_t_invalidForm=t_invalidForm.classList.contains('d-block');
     let has_al_invalidForm=al_invalidForm.classList.contains('d-block');
     let has_l_invalidForm=l_invalidForm.classList.contains('d-block');
@@ -90,7 +92,7 @@ function l_valueMaintain(){
     let value_l_Answer=document.getElementById('lecturerAnswer');
     let value_l_Mark=document.getElementById('lecturerMark');
 
-    if(has_t_invalidForm || has_al_invalidForm|| has_l_invalidForm || has_exForm){
+    if(has_fillForm || has_t_invalidForm || has_al_invalidForm|| has_l_invalidForm || has_exForm){
         console.log("Deleting");
         value_t_Answer.innerHTML=value_t_Mark.innerHTML=value_al_Answer.innerHTML=
         value_al_Mark.innerHTML=value_l_Answer.innerHTML=value_l_Mark.innerHTML=All_total_Mark.innerHTML="";
@@ -98,6 +100,7 @@ function l_valueMaintain(){
 }
 
 function ap_valueMaintain(){
+    let has_fillForm=fillForm.classList.contains('d-block');
     let has_t_invalidForm=t_invalidForm.classList.contains('d-block');
     let has_al_invalidForm=al_invalidForm.classList.contains('d-block');
     let has_l_invalidForm=l_invalidForm.classList.contains('d-block');
@@ -116,7 +119,7 @@ function ap_valueMaintain(){
 
     let value_ap_Answer=document.getElementById('a_professorAnswer');
     let value_ap_Mark=document.getElementById('a_professorMark');
-    if(has_t_invalidForm || has_al_invalidForm|| has_l_invalidForm|| has_ap_invalidForm || has_exForm){
+    if(has_fillForm || has_t_invalidForm || has_al_invalidForm|| has_l_invalidForm|| has_ap_invalidForm || has_exForm){
         console.log("Deleting");
         value_t_Answer.innerHTML=value_t_Mark.innerHTML=value_al_Answer.innerHTML=
         value_al_Mark.innerHTML=value_l_Answer.innerHTML=value_l_Mark.innerHTML=value_ap_Answer.innerHTML=value_ap_Mark.innerHTML=All_total_Mark.innerHTML="";
@@ -124,6 +127,7 @@ function ap_valueMaintain(){
 }
 
 function p_valueMaintain(){
+    let has_fillForm=fillForm.classList.contains('d-block');
     let has_t_invalidForm=t_invalidForm.classList.contains('d-block');
     let has_al_invalidForm=al_invalidForm.classList.contains('d-block');
     let has_l_invalidForm=l_invalidForm.classList.contains('d-block');
@@ -146,7 +150,7 @@ function p_valueMaintain(){
 
     let value_p_Answer=document.getElementById('professorAnswer');
     let value_p_Mark=document.getElementById('professorMark');
-    if(has_t_invalidForm || has_al_invalidForm|| has_l_invalidForm|| has_ap_invalidForm|| has_p_invalidForm || has_exForm){
+    if(has_fillForm || has_t_invalidForm || has_al_invalidForm|| has_l_invalidForm|| has_ap_invalidForm|| has_p_invalidForm || has_exForm){
         console.log("Deleting");
         value_t_Answer.innerHTML=value_t_Mark.innerHTML=value_al_Answer.innerHTML=
         value_al_Mark.innerHTML=value_l_Answer.innerHTML=value_l_Mark.innerHTML=value_ap_Answer.innerHTML=value_p_Answer.innerHTML=value_p_Mark.innerHTML=value_ap_Mark.innerHTML=All_total_Mark.innerHTML="";
@@ -846,6 +850,7 @@ function a_lecturerFunction(){
             console.log('Not Found');
         }
     }
+
     
 }
 // Lecturer Main Function
