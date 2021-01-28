@@ -78,36 +78,38 @@
             </div>
             <div class="col-12 col-lg-6">
                 <br>
-                <table class="output_table">
-                    <tr>
-                        <th>No</th>
-                        <th>Post</th>
-                        <th>Term of post<br>(year - month)</th>
-                        <th>Mark</th>
-                    </tr>
-                    <tr>
-                        <td>1.</td>
-                        <td>Lecturer</td>
-                        <td id="lecturerAnswer"></td>
-                        <td id="lecturerMark"></td>
-                    </tr>
-                    <tr>
-                        <td>2.</td>
-                        <td>Assistant Lecturer</td>
-                        <td id="a_lecturerAnswer"></td>
-                        <td id="a_lecturerMark"></td>
-                    </tr>
-                    <tr>
-                        <td>3.</td>
-                        <td>Tutor</td>
-                        <td id="tutorAnswer"></td>
-                        <td id="tutorMark"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">🔹Total mark </td>
-                        <td id="totalMark"></td>
-                    </tr>
-                </table> <br>
+                <div  id="tableWrapper" class="table-wrapper">
+                    <table class="table output-table">
+                        <tr>
+                            <th>No</th>
+                            <th>Post</th>
+                            <th>Term of post<br>(year - month)</th>
+                            <th>Mark</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Lecturer</td>
+                            <td id="lecturerAnswer"></td>
+                            <td id="lecturerMark"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Assistant Lecturer</td>
+                            <td id="a_lecturerAnswer"></td>
+                            <td id="a_lecturerMark"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Tutor</td>
+                            <td id="tutorAnswer"></td>
+                            <td id="tutorMark"></td>
+                        </tr>
+                        <tr  class="total-result">
+                            <td colspan="3">Total mark </td>
+                            <td id="totalMark"></td>
+                        </tr>
+                    </table>
+                </div> <br>
             </div>
         </div>
     </div>

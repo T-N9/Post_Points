@@ -24,6 +24,8 @@ function rankActivate(){
         window.location.replace("https://t-n9.github.io/Post_Points/rank/professor.html")
     }
 }
+
+
 // Reuseable Header Component
 let _header=document.getElementById('myHeader');
 _header.innerHTML=`<div class="d-flex justify-content-between align-items-center">
@@ -43,6 +45,13 @@ var al_invalidForm= document.getElementById('al_invalidForm');
 var l_invalidForm= document.getElementById('l_invalidForm');
 var ap_invalidForm= document.getElementById('ap_invalidForm');
 var p_invalidForm= document.getElementById('p_invalidForm');
+
+let inputFields=document.getElementById('dateCal');
+
+inputFields.onclick=function(){
+    document.getElementById('tableWrapper').classList.remove('approved-result');
+}
+
 
 //Value maintainer functions
 function t_valueMaintain(){
@@ -805,6 +814,7 @@ function tutorFunction(){
         ff_display_n_b();
     }else{
         document.getElementById('totalMark').innerHTML= totalMark;
+        document.getElementById('tableWrapper').classList.add('approved-result');
     }
     let has_t_invalidForm=t_invalidForm.classList.contains('d-block');
     t_valueMaintain();
@@ -839,6 +849,7 @@ function a_lecturerFunction(){
         }
         if(!(Number.isNaN(totalMark))){
             document.getElementById('totalMark').innerHTML= totalMark;
+            document.getElementById('tableWrapper').classList.add('approved-result');
         }
         
         let has_t_invalidForm=t_invalidForm.classList.contains('d-block');
@@ -880,7 +891,7 @@ function lecturerFunction(){
         }
         if(!(Number.isNaN(totalMark))){
             document.getElementById('totalMark').innerHTML= totalMark;
-            console.log(totalMark);
+            document.getElementById('tableWrapper').classList.add('approved-result');
         }
         let has_t_invalidForm=t_invalidForm.classList.contains('d-block');
         let has_al_invalidForm=al_invalidForm.classList.contains('d-block');
@@ -924,7 +935,7 @@ function a_professorFunction(){
         }
         if(!(Number.isNaN(totalMark))){
             document.getElementById('totalMark').innerHTML= totalMark;
-            console.log(totalMark);
+            document.getElementById('tableWrapper').classList.add('approved-result');
         }
         let has_t_invalidForm=t_invalidForm.classList.contains('d-block');
         let has_al_invalidForm=al_invalidForm.classList.contains('d-block');
@@ -973,7 +984,7 @@ function professorFunction(){
         }
         if(!(Number.isNaN(totalMark))){
             document.getElementById('totalMark').innerHTML= totalMark;
-            console.log(totalMark);
+            document.getElementById('tableWrapper').classList.add('approved-result');
         }
         let has_t_invalidForm=t_invalidForm.classList.contains('d-block');
         let has_al_invalidForm=al_invalidForm.classList.contains('d-block');
