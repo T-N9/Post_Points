@@ -2,7 +2,6 @@ $background-color:aliceblue;
 $primary-color:#00A2FF;
 $dark-color:#384955;
 
-
 /* fontFamily  */
 @font-face{
     font-family: Ours-Unicode;
@@ -20,6 +19,7 @@ $dark-color:#384955;
     font-family: Poppins;
     src: url(../fonts/Poppins-Regular.ttf);
 }
+
 body{
     font-family: 'Poppins','Ours-Unicode' ;
     height: 100vh;
@@ -27,10 +27,9 @@ body{
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    /* background-color: #333;
-    color:white; */
     color: #384955;
 }
+// Font family specification
 .para-font{
     font-family: Roboto;
 }
@@ -39,12 +38,14 @@ body{
     margin-top: 20px;
     text-align: justify;
 }
+// Landing Image
 .teacher-img{
     text-align: center;
     img{
         width: 70%;
     }
 }
+// Header
 .nav-head{
     position: absolute;
     background-color: white;
@@ -64,12 +65,11 @@ body{
         }
     }
 }
-
+// Information Modal
 .info-section{
     width: 100%;
     height: 100%;
     position: absolute;
-    // background-color: #33333360;
     z-index: 30000;
     justify-content: center;
     align-items: center;
