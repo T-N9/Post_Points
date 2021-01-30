@@ -37,6 +37,7 @@ body{
 .info-para{
     padding: 0px 100px;
     margin-top: 20px;
+    text-align: justify;
 }
 .teacher-img{
     text-align: center;
@@ -68,17 +69,18 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #33333360;
+    // background-color: #33333360;
     z-index: 30000;
     justify-content: center;
     align-items: center;
+    color: white;
     #information{
         .info-header{
             display: flex;
             justify-content: space-between;
             #closeInfo{
                 font-size: 30px;
-                color: darkred;
+                color: white;
                 cursor: pointer;
             }
         }
@@ -86,9 +88,11 @@ body{
         width: 80%;
         height: 90%;
         overflow: auto;
-        background-color: $background-color;
-        box-shadow: 0px 5px 10px -10px $dark-color;
-        padding: 20px;
+        // background-color: $background-color;
+        background-color: rgba($primary-color,0.9);
+        box-shadow: 10px 10px 23px -10px #384955;
+        padding: 20px 30px;
+        
         .list-latin{
             list-style-type: lower-latin;
         }
@@ -171,16 +175,17 @@ th{
     color: #38495590;
 }
 td,th{
-    // border: 1px solid white;
     padding: 5px 10px;
 }
 
+#resultSection{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .output-table{
-    // color: white;
     text-align: center;
-    // border: 2px solid white;
-    // box-shadow: 0px 5px 17px -7px $dark-color;
-    // background-color: white;
     .total-result{
         font-weight: bold;
         font-size: 18px;
@@ -231,6 +236,12 @@ td,th{
     }
     .app-discription{
         margin-top: 40px;
+    }
+    #information{
+        width: 90%;
+    }
+    .info-para{
+        padding: 0;
     }
 }
 @media screen and (max-width:576px){

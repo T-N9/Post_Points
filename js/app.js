@@ -30,7 +30,7 @@ function rankActivate(){
 let _header=document.getElementById('myHeader');
 _header.innerHTML=`<div class="d-flex justify-content-between align-items-center">
 <a href="https://t-n9.github.io/Post_Points/"><img class="app-logo" src="../img/icons8-curly-arrow-64.png" alt="my-logo"></a>
-<div class="app-info"><i class="fas fa-info-circle"></i></div>
+<div id="appInfo" class="app-info"><i class="fas fa-info-circle"></i></div>
 </div>`;
 
 // Declarations
